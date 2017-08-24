@@ -1,0 +1,51 @@
+<% include partials/header %>
+
+    <section class="banner">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                    <div class="front">
+                        <h1>Welcome to Myblog</h1>
+                        <p>You will view some  nonsense stories about me here</p>
+                    </div>
+                </div>
+            </div>           
+        </div>   
+    </section>
+
+    <h2 class="recent-post">Recent Blog Post</h2>
+    <% post.forEach(function(posts){ %>
+    <div class="container">
+        <div class="row">
+            <div col-md-4>
+                <div class="media">
+                    <img class="d-flex mr-3 image-fluid" src="<%= posts.image %>" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0"><%= posts.title %></h5>
+                            <a href="#" class="badge badge-secondary"><%= moment().format('MMMM Do YYYY, h:mm:ss a'); %></a>
+                        <p><%= posts.description.substring(0, 200) %>...</p>
+                        <a class="read" href="/<%=posts._id%>">Read More</a class="front">
+
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+<%})%>
+
+
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+  
+  
+        <li class="page-item"><a class="page-link" href="/"><%= post.post %></a></li>
+
+    
+
+   
+  </ul>
+</nav>
+
+<% include partials/footer %>

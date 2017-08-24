@@ -1,0 +1,71 @@
+
+.new-post {
+    margin: 50px auto;
+    width: 50%;
+
+}
+.heading {
+    margin-left: 150px;
+}
+
+.media  {
+    margin: 100px;
+    margin-left: 10px;
+    border: 1px solid black;
+    height: 65%;
+    margin-bottom: 20px;
+    width: 60%;
+}
+ .media img {
+    width: 20%;
+    height: 100%;
+} 
+
+
+
+.banner {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../stylesheets/img/DrgonStone03.jpg);
+    width: 100%;
+    padding: 200px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+    
+    
+}
+
+.front  {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.badge.badge-secondary {
+    margin-bottom: 20px;
+}
+
+.recent-post {
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 20%;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #3498db;
+}
+
+.pagination{
+    margin-left: 500px;
+    margin-top: 50px;
+    
+}
+
+.blog-image img {
+   width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white;
+   
+    
+}
